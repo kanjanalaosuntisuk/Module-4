@@ -1,7 +1,7 @@
 ##### Description: Codes for data visualization of Amusement Park injuries (#TidyTuesday project)
 ##### Author: Kanjana Laosuntisuk
 ##### Date created: Sep 14, 2019
-##### Last modified: Sep 14, 2019
+##### Last modified: Sep 15, 2019
 
 library(tidyverse)
 
@@ -34,6 +34,6 @@ ggplot(data = tx_injuries_tx_gender_age, aes(age, fill = gender)) +
   scale_fill_discrete(name = "Gender", labels = c("Female", "Male")) +
   theme_grey() +
   facet_wrap(~city, nrow = 10) + 
-  scale_y_continuous(breaks = c(3, 6, 9))
+  scale_y_continuous(breaks = c(2, 4, 6, 8))
 
                      
