@@ -32,5 +32,8 @@ ggplot(data = tx_injuries_tx_gender_age, aes(age, fill = gender)) +
   geom_histogram(position = "dodge") +
   labs(x = "Age", y = "Number of individuals", title = "Injuries in Texas Amusement Park", subtitle = "Age and Gender of Injured Individuals in Different City", caption = "Data source: data.world") +
   scale_fill_discrete(name = "Gender", labels = c("Female", "Male")) +
-  theme_minimal() +
-  facet_wrap(~city, nrow = 10)
+  theme_grey() +
+  facet_wrap(~city, nrow = 10) + 
+  scale_y_continuous(breaks = c(3, 6, 9))
+
+                     
